@@ -23,7 +23,7 @@ class _DashboardState extends State<Dashboard> {
               children: [
                 Expanded(
                   flex: 3,
-                  child: Container(
+                  child: SizedBox(
                     height: 100,
                     child: Padding(
                       padding: const EdgeInsets.only(right: 1),
@@ -36,7 +36,7 @@ class _DashboardState extends State<Dashboard> {
                             children: [
                               const Icon(
                                 FontAwesomeIcons.users,
-                                color: const Color(0xff999999),
+                                color:   Color(0xff999999),
                               ),
                               const SizedBox(
                                 height: 10,
@@ -76,6 +76,7 @@ class _DashboardState extends State<Dashboard> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const Icon(
+                              // ignore: deprecated_member_use
                               FontAwesomeIcons.calendarAlt,
                               color: Color(0xff999999),
                             ),
@@ -97,7 +98,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 Expanded(
                   flex: 3,
-                  child: Container(
+                  child: SizedBox(
                     height: 100,
                     child: Container(
                       color: Colors.white,
@@ -149,7 +150,7 @@ class _DashboardState extends State<Dashboard> {
                           children: [
                             const Icon(
                               FontAwesomeIcons.bloggerB,
-                              color: const Color(0xff999999),
+                              color:   Color(0xff999999),
                             ),
                             const SizedBox(
                               height: 10,
@@ -176,7 +177,7 @@ class _DashboardState extends State<Dashboard> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        const Color(0xff727a80),
+                          Color(0xff727a80),
                         Colors.white,
                       ],
                     )),
@@ -211,7 +212,7 @@ class _DashboardState extends State<Dashboard> {
                   flex: 3,
                   child: Container(
                     decoration: const BoxDecoration(
-                        gradient: const LinearGradient(
+                        gradient:   LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
@@ -228,8 +229,9 @@ class _DashboardState extends State<Dashboard> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const Icon(
+                              // ignore: deprecated_member_use
                               FontAwesomeIcons.questionCircle,
-                              color: const Color(0xff999999),
+                              color:   Color(0xff999999),
                             ),
                             const SizedBox(
                               height: 10,
@@ -345,7 +347,7 @@ class _DashboardState extends State<Dashboard> {
                               style: TextStyle(
                                 fontSize: width / 14,
                                 fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(215, 30, 30, 30),
+                                color: const Color.fromARGB(215, 30, 30, 30),
                               ),
                             ),
                           ],
@@ -373,6 +375,7 @@ class _DashboardState extends State<Dashboard> {
                         child: Column(
                           children: [
                             Icon(
+                              // ignore: deprecated_member_use
                               FontAwesomeIcons.solidCalendarAlt,
                               color: Colors.green,
                               size: width / 14,
@@ -466,12 +469,12 @@ class _DashboardState extends State<Dashboard> {
                     style: TextStyle(
                       fontSize: width / 20,
                       fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(195, 59, 59, 59),
+                      color: const Color.fromARGB(195, 59, 59, 59),
                     ),
                   ),
                   const Icon(
                     FontAwesomeIcons.arrowRight,
-                    color: const Color(0xff2d2d2d),
+                    color:   Color(0xff2d2d2d),
                   ),
                 ],
               ),
@@ -497,7 +500,7 @@ class _DashboardState extends State<Dashboard> {
                                   color: Colors.grey.withOpacity(0.3),
                                   spreadRadius: 5,
                                   blurRadius: 5,
-                                  offset: Offset(0, 3), // changes position of shadow
+                                  offset: const Offset(0, 3), // changes position of shadow
                                 ),
                               ],
                               borderRadius: BorderRadius.circular(7),

@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
               ),
             ),
             const Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+              padding:   EdgeInsets.symmetric(vertical: 15, horizontal: 40),
               child: Text("Lorem ipsum dolor sit amet, consectetur.",
                   textAlign: TextAlign.center, textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: true, applyHeightToLastDescent: true), style: MyTextStyle.genericSize),
             ),
@@ -119,7 +119,7 @@ class _LoginState extends State<Login> {
             ElevatedButton(
               child: const Text('Giriş'),
               onPressed: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Dashboard()));
               },
               style: ElevatedButton.styleFrom(
                   primary: const Color.fromARGB(255, 51, 215, 57),

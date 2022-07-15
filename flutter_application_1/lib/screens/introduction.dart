@@ -8,7 +8,6 @@ class IntroductionScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
-    var screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Column(
         children: [
@@ -22,7 +21,7 @@ class IntroductionScreens extends StatelessWidget {
           ),
           const Text(
             "Dijital Asistan'a\n Hoşgeldiniz !",
-            style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 28, letterSpacing: 0.5, color: Color.fromARGB(255, 70, 70, 70)),
+            style:   TextStyle(fontWeight: FontWeight.w500, fontSize: 28, letterSpacing: 0.5, color: Color.fromARGB(255, 70, 70, 70)),
           ),
           const Padding(
             padding: EdgeInsets.all(40),
@@ -54,12 +53,12 @@ class IntroductionScreens extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: ((context) => Login())));
+              Navigator.push(context, MaterialPageRoute(builder: ((context) => const Login())));
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Giriş Yap ", style: MyTextStyle.customTextStyle(22, Color.fromARGB(255, 64, 202, 69))),
+                Text("Giriş Yap ", style: MyTextStyle.customTextStyle(22,const Color.fromARGB(255, 64, 202, 69))),
                 const Icon(
                   Icons.arrow_forward,
                   size: 30,
